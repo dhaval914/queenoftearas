@@ -1,0 +1,100 @@
+<style>
+    .share-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+body{
+  background-image: url(QUEEN\ OF\ TEARS\ WALLPAPER.jpeg);
+  background-repeat: repeat-x;
+}
+
+.share-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.share-button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.share-button p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.share-button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.share-button[data-platform="facebook"] {
+  color: #4267B2;
+}
+
+.share-button[data-platform="whatsapp"] {
+  color: #25D366;
+}
+
+.share-button[data-platform="instagram"] {
+  color: #E1306C;
+}
+
+@media (max-width:768px){
+  body{
+    background-size: cover;
+  }
+}
+
+.insta{
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow{
+  position: relative;
+  height: 20px;
+  width: 250px;
+  color: #ff420e;
+  font-family: fantasy;
+  border: 1px solid black   ;
+  text-decoration: #25D366;
+  border-radius: 7px;
+  box-shadow: 20px 20px 20px rgb(46, 45, 45);
+  transform: rotate(-15deg);
+  margin-left:60px ;
+  background-color: aliceblue;
+}
+</style>
+
+<div class="share-container">
+    <div class="share-button" data-platform="facebook">
+<a href="https://www.facebook.com/">  <img src="facebook.jpg" alt="Facebook"></a>
+    </div>
+
+
+    <div class="share-button" data-platform="whatsapp">
+     <a href="https://www.whatsapp.com/"> <img src="whatapp.jpg" alt="WhatsApp"></a>
+    </div>
+
+
+    <div class="share-button" data-platform="instagram">
+    <a href="https://www.instagram.com/">  <img src="instgrame.jpg" alt="Instagram"></a>
+    </div>
+  </div>
+<div class="insta">
+  <div class="follow">
+    follow me on ig:dhaval_912
+  </div>
+</div>
+
+
